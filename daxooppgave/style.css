@@ -1,0 +1,47 @@
+body {
+    background-color: #424242;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: #fafafa;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    font-size: x-large;
+    color: #fafafa;
+}
+
+.container img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px; 
+}
+
+.container p {
+    font-stretch: condensed;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    .container img {
+        margin-right: 20px; 
+        margin-bottom: 0; 
+        width: 50%;
+    }
+
+    .container p {
+        flex: 1; 
+    }
+}
